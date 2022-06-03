@@ -1,6 +1,1 @@
-imports = ["language.rust"]
-
-# https://numtide.github.io/devshell
-[[commands]]
-package = "devshell.cli"
-help = "Per project developer environments"
+packages = ["treefmt", "taplo-cli"]
