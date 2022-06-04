@@ -22,6 +22,7 @@
             ++ [
               common.pkgs.rust-analyzer
               common.pkgs.cargo-watch
+              common.pkgs.cargo-edit
             ];
           commands = prev.commands;
           env = prev.env;
