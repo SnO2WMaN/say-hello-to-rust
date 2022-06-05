@@ -16,6 +16,12 @@ systems = [
     "x86_64-linux",
 ]
 
+[package.metadata.nix.crateOverride.openssl-sys]
+nativeBuildInputs = ["pkgconfig"]
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
+clap = { version = "3.1.18", features = ["derive"] }
 rand = "0.8.5"
+reqwest = "0.11.10"
+tokio = { version = "1.19.0", features = ["full"] }

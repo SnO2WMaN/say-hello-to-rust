@@ -16,6 +16,12 @@
     inputs.nci.lib.makeOutputs {
       root = ./.;
       overrides = {
+        # crateOverrides = common: prev: {
+        #   "openssl-sys" = prev: {
+        #     buildInputs = (prev.buildInputs or [ ]) ++ [ ];
+        #     nativeBuildInputs = (prev.nativeBuildInputs or [ ]) ++ [ common.pkgs.pkgconfig ];
+        #   };
+        # };
         shell = common: prev: {
           packages =
             prev.packages
